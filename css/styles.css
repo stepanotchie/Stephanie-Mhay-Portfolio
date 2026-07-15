@@ -341,9 +341,9 @@ body.page-loaded {
 /* Home/default state — set by app.js via IntersectionObserver, same
    mechanism as .nav-links a.active. Active by default on page load and
    whenever the user is back at the top of the page. */
-.logo.active {
+/* .logo.active {
     color: var(--primary-red);
-}
+} */
 
 /* Mobile hamburger button — sized in em against a clamp()'d font-size so
    the whole icon (box, bars, gap) scales together as the viewport does,
