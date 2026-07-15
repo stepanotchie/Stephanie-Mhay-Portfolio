@@ -1,13 +1,13 @@
 {
   "skills": {
     "technical": [
-      { "name": "HTML", "icon": "assets_icons/HTML icon.svg" },
-      { "name": "CSS", "icon": "assets_icons/CSS icon.svg" },
-      { "name": "JavaScript", "icon": "assets_icons/JS icon.svg" },
-      { "name": "Java", "icon": "assets_icons/Java icon.svg" },
-      { "name": "Figma", "icon": "assets_icons/Figma icon.svg" },
-      { "name": "Photoshop", "icon": "assets_icons/Photoshop icon.svg" },
-      { "name": "Canva", "icon": "assets_icons/Canva icon.svg" }
+      { "name": "HTML", "icon": "assets-icons/HTML icon.svg" },
+      { "name": "CSS", "icon": "assets-icons/CSS icon.svg" },
+      { "name": "JavaScript", "icon": "assets-icons/JS icon.svg" },
+      { "name": "Java", "icon": "assets-icons/Java icon.svg" },
+      { "name": "Figma", "icon": "assets-icons/Figma icon.svg" },
+      { "name": "Photoshop", "icon": "assets-icons/Photoshop icon.svg" },
+      { "name": "Canva", "icon": "assets-icons/Canva icon.svg" }
     ],
     "soft": [
       { "name": "Creativity", "level": 75 },
@@ -23,7 +23,7 @@
     {
       "title": "Loved & Found",
       "description": "Loved & Found is an e-commerce website of luxury pieces. Clients can buy and sell their authenticated preloved items.",
-      "image": "assets_images/project-mockup.mp4",
+      "image": "assets-images/project-mockup.mp4",
       "type": "video",
       "link": "https://www.figma.com/proto/bJbEzh1tVABBb2MViLCmUt/Main-Project?node-id=111-10710&p=f&t=62L8Z6VDfCrnmJml-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=111%3A10710",
       "linkText": "Live Interactive Design",
@@ -32,7 +32,7 @@
     {
       "title": "Fastrax Driving Academy",
       "description": "A console-based driving tutorial booking system with real-time notifications.",
-      "image": "assets_images/Fastrax Driving Academy Program.mp4",
+      "image": "assets-images/Fastrax Driving Academy Program.mp4",
       "type": "video",
       "link": "https://github.com/stepanotchie/Compro2ndSem/tree/7d49175884341dd985f9a00ddf5ccb8f8e3dd708/finals_lab/stepanot",
       "linkText": "Go to Fastrax",
@@ -41,7 +41,7 @@
     {
       "title": "Hang Man Game",
       "description": "A console-based word guessing game built using Java.",
-      "image": "assets_images/HangMan_Walkthrough.mp4",
+      "image": "assets-images/HangMan_Walkthrough.mp4",
       "type": "video",
       "link": "https://github.com/stepanotchie/HangMan-Game.git",
       "linkText": "Go to HangMan",
