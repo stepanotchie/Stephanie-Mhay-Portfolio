@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', init);
 
 async function init() {
     setupNavToggle();
+    setupLogoHomeLink();
     setupContactForm();
     setupEmailButton();
     setupActiveNavLink();
@@ -295,6 +296,23 @@ function renderEducation(education = []) {
             </div>
         </div>
     `).join('');
+}
+
+/* Logo / home link — clicking it should always scroll to the top, even
+   if the URL hash is already "#home" (e.g. you clicked it once already).
+   Native anchor links only scroll on a hash *change*, so a plain <a
+   href="#home"> silently does nothing on a repeat click. Handling the
+   click explicitly guarantees it always works. */
+function setupLogoHomeLink() {
+    const logo = document.querySelector('.logo[href="#home"]');
+    const home = document.getElementById('home');
+    if (!logo || !home) return;
+
+    logo.addEventListener('click', (event) => {
+        event.preventDefault();
+        home.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.pushState(null, '', '#home');
+    });
 }
 
 /* Mobile navigation toggle*/

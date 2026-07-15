@@ -233,6 +233,7 @@ video {
 
 /* Offsets anchor jumps so the sticky navbar never covers the
    section title when a nav link is clicked. */
+#home,
 #about,
 #skills,
 #projects,
