@@ -334,6 +334,14 @@ body.page-loaded {
     font-size: clamp(1rem, 4.5vw, 1.3rem);
     letter-spacing: 1px;
     white-space: nowrap;
+    transition: color var(--transition-fast);
+}
+
+/* Home/default state — set by app.js via IntersectionObserver, same
+   mechanism as .nav-links a.active. Active by default on page load and
+   whenever the user is back at the top of the page. */
+.logo.active {
+    color: var(--primary-red);
 }
 
 /* Mobile hamburger button — sized in em against a clamp()'d font-size so

@@ -89,7 +89,10 @@ function setupSkillBarAnimation() {
    link and marks that link .active as its section crosses the middle of
    the viewport, so the nav always shows where you are on the page. */
 function setupActiveNavLink() {
-    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    // The logo (href="#home") is tracked alongside the section nav links so
+    // it lights up as the default/home state — on load, at the top of the
+    // page, and whenever it's clicked.
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"], .logo[href^="#"]');
     if (!navLinks.length) return;
 
     const sections = Array.from(navLinks)
@@ -103,21 +106,17 @@ function setupActiveNavLink() {
         });
     };
 
-    const clearActive = () => {
-        navLinks.forEach((link) => link.classList.remove('active'));
-    };
-
-    // How far the user needs to scroll before any nav link is allowed to
-    // light up. Without this, IntersectionObserver's initial callback (which
-    // fires the moment observe() is called, before any scrolling) can find
-    // that the first section's edge already sits inside the shrunk
-    // "-45% / -50%" detection band at scrollY 0 — especially if the hero +
-    // intro sections are short — and mark it active on page load.
+    // How far the user needs to scroll before a *section* link (not home)
+    // is allowed to light up. Without this, IntersectionObserver's initial
+    // callback (which fires the moment observe() is called, before any
+    // scrolling) can find that the first section's edge already sits inside
+    // the shrunk "-45% / -50%" detection band at scrollY 0 — especially if
+    // the hero + intro sections are short — and mark it active on page load.
     const activationThreshold = () => window.innerHeight * 0.3;
 
     const observer = new IntersectionObserver((entries) => {
         if (window.scrollY < activationThreshold()) {
-            clearActive();
+            setActive('home');
             return;
         }
         entries.forEach((entry) => {
@@ -132,11 +131,15 @@ function setupActiveNavLink() {
 
     sections.forEach((section) => observer.observe(section));
 
-    // Belt-and-suspenders: also clear on ordinary scroll events near the
-    // top, in case the observer's own callback doesn't fire again right away.
+    // Belt-and-suspenders: also fall back to "home" on ordinary scroll
+    // events near the top, in case the observer's own callback doesn't
+    // fire again right away.
     window.addEventListener('scroll', () => {
-        if (window.scrollY < activationThreshold()) clearActive();
+        if (window.scrollY < activationThreshold()) setActive('home');
     }, { passive: true });
+
+    // Default state on page load, before any scroll/observer callback fires.
+    setActive('home');
 }
 
 /* Scroll reveal — fades elements in as they enter the viewport and back
