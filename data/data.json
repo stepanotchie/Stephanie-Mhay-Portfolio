@@ -1,0 +1,111 @@
+{
+  "skills": {
+    "technical": [
+      { "name": "HTML", "icon": "assets_icons/HTML icon.svg" },
+      { "name": "CSS", "icon": "assets_icons/CSS icon.svg" },
+      { "name": "JavaScript", "icon": "assets_icons/JS icon.svg" },
+      { "name": "Java", "icon": "assets_icons/Java icon.svg" },
+      { "name": "Figma", "icon": "assets_icons/Figma icon.svg" },
+      { "name": "Photoshop", "icon": "assets_icons/Photoshop icon.svg" },
+      { "name": "Canva", "icon": "assets_icons/Canva icon.svg" }
+    ],
+    "soft": [
+      { "name": "Creativity", "level": 75 },
+      { "name": "Persuasion", "level": 100 },
+      { "name": "Time Management", "level": 60 },
+      { "name": "Sense of Humor", "level": 100 },
+      { "name": "Adaptability", "level": 80 },
+      { "name": "Teamwork & Collaboration", "level": 70 },
+      { "name": "Hardware Repair", "level": 75 }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Loved & Found",
+      "description": "Loved & Found is an e-commerce website of luxury pieces. Clients can buy and sell their authenticated preloved items.",
+      "image": "assets_images/project-mockup.mp4",
+      "type": "video",
+      "link": "https://www.figma.com/proto/bJbEzh1tVABBb2MViLCmUt/Main-Project?node-id=111-10710&p=f&t=62L8Z6VDfCrnmJml-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=111%3A10710",
+      "linkText": "Live Interactive Design",
+      "tools": ["Figma", "Photoshop", "Canva", "UI/UX", "Prototype"]
+    },
+    {
+      "title": "Fastrax Driving Academy",
+      "description": "A console-based driving tutorial booking system with real-time notifications.",
+      "image": "assets_images/Fastrax Driving Academy Program.mp4",
+      "type": "video",
+      "link": "https://github.com/stepanotchie/Compro2ndSem/tree/7d49175884341dd985f9a00ddf5ccb8f8e3dd708/finals_lab/stepanot",
+      "linkText": "Go to Fastrax",
+      "tools": ["API", "Java", "Git"]
+    },
+    {
+      "title": "Hang Man Game",
+      "description": "A console-based word guessing game built using Java.",
+      "image": "assets_images/HangMan_Walkthrough.mp4",
+      "type": "video",
+      "link": "https://github.com/stepanotchie/HangMan-Game.git",
+      "linkText": "Go to HangMan",
+      "tools": ["Java"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Personal Secretary",
+      "company": "Fixhub Telecommunication and Electronic Shop",
+      "period": "May 2024 - Present",
+      "bullets": [
+        "Managed 30\u201350 daily inquiries, streamlining intake-to-release workflows for customer units.",
+        "Facilitates clear communication between management and staff by attending and documenting meetings and reporting key insights to the owner.",
+        "Maintains high service standards, consistently resulting in positive customer feedback."
+      ]
+    },
+    {
+      "role": "Layout Artist",
+      "company": "Freelance",
+      "period": "January 2023 - Present",
+      "bullets": [
+        "Delivering high-quality graphic design solutions for a variety of print and digital projects, including brochures, magazines, and social media marketing assets using Adobe Photoshop and Canva.",
+        "Maintaining high standards of accuracy and visual appeal across all deliverables, ensuring projects are optimized for both print production and digital display.",
+        "Cultivating long-term relationships with repeat clients by consistently producing work that aligns with their specific brand guidelines and visual identity."
+      ]
+    },
+    {
+      "role": "E-Commerce Manager",
+      "company": "Artsy Wardrobe Online Store",
+      "period": "March 2020 - April 2024",
+      "bullets": [
+        "Reduced inventory discrepancies by performing daily audits to ensure match between digital records and physical stock.",
+        "Increased order fulfillment accuracy to 80% by implementing standardized tracking and quality control protocols.",
+        "Ensures smooth transactions from order processing to delivery, avoiding delay in order ship outs and bad customer experiences."
+      ]
+    },
+    {
+      "role": "Sales Assistant Intern",
+      "company": "Tecno and Infinix Mobile",
+      "period": "March 2024 - April 2024",
+      "bullets": [
+        "Increased store revenue by 50% through proactive sales and expert product demonstrations.",
+        "Engaging to 30\u201370 customers daily, providing personalized recommendations and resolving inquiries.",
+        "Optimizing store displays and operations to enhance product visibility and brand reputation.",
+        "Enhanced customer satisfaction with attentive service and quick resolution of complaints."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Information Technology",
+      "institution": "Lorma Colleges",
+      "years": "2025 - Present"
+    },
+    {
+      "degree": "Senior High School - STEM",
+      "institution": "AMA Computer College",
+      "years": "2022 - 2024"
+    },
+    {
+      "degree": "Junior High School",
+      "institution": "La Union National High School",
+      "years": "2017 - 2022"
+    }
+  ]
+}
